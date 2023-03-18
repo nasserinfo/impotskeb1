@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%; 
+    background-image: linear-gradient(to right, rgb(224, 129, 129),rgb(115, 240, 115));
+}
+#logosite{
+    width: 40%;
+    height: 100%;
+    float: right;
+    background-color: beige;
+}
+#img01{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+}
+#title01{
+    float: left;
+    line-height: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+nav{
+    width: 60%;
+}
+nav a{
+text-decoration: none;
+color:rgb(2, 2, 48);
+font-weight: bold;
+display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 110px;
+    background-color: rgb(197, 185, 188);
+    text-align: center;
+}
+nav a:hover{
+  background-color: black;
+  color: beige;
+  height: 100%;
+  width: 100%;
+
+}
+main{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(223, 72, 72);
+    border-top: 5px solid white;
+  /*  clip-path: polygon(10% 0, 100% 0%, 90% 99%, 0% 100%);*/
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+    float: left;
+    
+}
+#img02{
+    width: 90%;
+    height: 20%px;
+}
+#h1aside{
+    padding: 5px 0px;
+    border: 5px solid black;
+}
+#articlemain{
+    width: 70%;
+    height: 60%;
+    float: right;
+    position: relative;
+}
+#divarticle{
+    text-align: center;
+    width: 35%;
+    height: 50%;
+    background-color: rgb(159, 159, 241);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+article h1{
+    border-bottom: 3px solid brown;
+    padding: 10px;
+}
+article p{
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.733);
+    position: relative;
+}
+#contact img{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+#contact{
+    text-align: center;
+
+}   
+#textfooter{
+    color: rgb(202, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 40%;
+    background-color: brown;
+    position: absolute;
+    left: 30%;
+
+} 
+#contact img:hover{
+    background-color: azure;
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes anim{
+    0%{
+        background-color: rgb(243, 224, 224);
+     }
+    25%{
+        background-color: rgb(85, 73, 73);
+    }
+    5%{
+        background-color: rgb(223, 165, 165);
+    }
+    100%{
+        background-color: rgb(102, 173, 190);
+    }
+}
+@media only screen and (max-width:900px)   {
+    header{
+        height: auto;     
+    }
+    #logosite{
+        width: 100%;
+    }
+    footer{
+        height: 150px;
+    }
+    nav{
+        width: 100%;
+    }
+    #divarticle{
+        height: auto;
+        width: auto;
+    }
+}
+
+/*الهاتف بشكل عمودي*/
+@media only screen and (orientation:landscape) and (max-width:900px)  {
+
+} 
+/*الهاتف بشكل أفقي*/
+@media only screen and (orientation:portrait) and (max-width:900px) {
+
+} 
+/*منع طباعة من الصفحة*/
+@media print {
+    header{
+        display: none;
+    }
+}
